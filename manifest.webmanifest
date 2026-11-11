@@ -1,0 +1,20 @@
+{
+  "name": "عربی‌لند | دروازه‌ای به جهان جادویی واژه‌ها",
+  "short_name": "عربی‌لند",
+  "description": "جهان فانتزی و تعاملی یادگیری عربی پایه نهم",
+  "lang": "fa",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#100d24",
+  "theme_color": "#100d24",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

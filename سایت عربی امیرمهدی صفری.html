@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#100d24">
+  <meta name="description" content="عربی‌لند؛ دنیای تعاملی یادگیری عربی پایه نهم با واژگان، قواعد، آزمون، بازی و فلش‌کارت.">
+  <title>عربی‌لند | دروازه‌ای به جهان جادویی واژه‌ها</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/fantasy.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-lockup">
+        <div class="brand-mark"><span>ع</span><i></i></div>
+        <div><b>عربی‌لند</b><small>ARABILAND · GRADE 9</small></div>
+      </div>
+      <div class="explorer-mini">
+        <div class="avatar">ک</div>
+        <div class="explorer-copy"><b id="sidebarName">کاوشگر</b><small><span id="sidebarLevel">سطح ۱</span> · <span id="sidebarRank">تازه‌وارد</span></small></div>
+        <span class="online-dot"></span>
+      </div>
+      <nav class="main-nav" aria-label="ناوبری اصلی">
+        <p class="nav-label">جهان یادگیری</p>
+        <button class="nav-item active" data-view="home"><span class="nav-icon">⌂</span><span>اتاق فرمان</span><kbd>⌂</kbd></button>
+        <button class="nav-item" data-view="lessons"><span class="nav-icon">✧</span><span>نقشهٔ درس‌ها</span><kbd>۱۰</kbd></button>
+        <button class="nav-item" data-view="dictionary"><span class="nav-icon">اب</span><span>شهر واژگان</span><kbd>⌕</kbd></button>
+        <button class="nav-item" data-view="rules"><span class="nav-icon">∑</span><span>قلعهٔ قواعد</span><kbd>۱۱</kbd></button>
+        <button class="nav-item" data-view="translation"><span class="nav-icon">⇄</span><span>سرزمین ترجمه</span><kbd>↗</kbd></button>
+        <p class="nav-label nav-label-spaced">تمرین و رقابت</p>
+        <button class="nav-item" data-view="exams"><span class="nav-icon">▤</span><span>تالار آزمون</span></button>
+        <button class="nav-item" data-view="games"><span class="nav-icon">♢</span><span>آزمایشگاه بازی</span></button>
+        <button class="nav-item" data-view="flashcards"><span class="nav-icon">▣</span><span>فلش‌کارت‌ها</span></button>
+        <button class="nav-item" data-view="progress"><span class="nav-icon">◴</span><span>کارنامهٔ کاوشگر</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="side-tip"><span class="tip-star">✦</span><b>یادگیری کوچک، هر روز</b><p>پنج واژه در روز، یک پیشرفت بزرگ در پایان ماه.</p></div>
+        <button class="nav-item" data-view="settings"><span class="nav-icon">⚙</span><span>تنظیمات</span></button>
+        <button class="nav-item" data-view="about"><span class="nav-icon">ⓘ</span><span>دربارهٔ پروژه</span></button>
+        <div class="side-footer">ساخته‌شده برای ماجراجویان زبان</div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu icon-button" id="mobileMenu" aria-label="باز کردن منو">☰</button>
+        <div class="breadcrumb"><span>جهان عربی</span><b>/</b><strong id="currentSection">اتاق فرمان</strong></div>
+        <div class="top-actions">
+          <label class="global-search"><span>⌕</span><input id="globalSearch" type="search" placeholder="واژه، قاعده یا درس را پیدا کن..." autocomplete="off"><kbd>⌘ K</kbd></label>
+          <button class="icon-button theme-button" id="themeToggle" title="تغییر تم" aria-label="تغییر تم">☾</button>
+          <button class="top-profile" data-view="settings"><span class="avatar avatar-small">ک</span><span id="topName">کاوشگر</span><span class="chevron">⌄</span></button>
+        </div>
+      </header>
+
+      <div class="content-wrap">
+        <!-- HOME -->
+        <section class="view active" id="view-home">
+          <div class="hero-panel">
+            <div class="hero-grid"></div><div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+            <div class="hero-copy">
+              <div class="eyebrow"><span class="eyebrow-dot"></span> مأموریت تازه‌ای در انتظارت است <span class="eyebrow-line"></span></div>
+              <h1>زبان را <em>کشف کن</em>،<br>نه فقط حفظ.</h1>
+              <p>از شهر واژگان تا قلعهٔ قواعد؛ هر قدم تو را به فرمانروایی جهان عربی نزدیک‌تر می‌کند.</p>
+              <div class="hero-actions"><button class="btn btn-primary" data-view="lessons">شروع ماجراجویی <span>←</span></button><button class="btn btn-ghost" data-view="dictionary">مرور واژگان <span>⌕</span></button></div>
+              <div class="hero-proof"><div class="proof-avatars"><span>ع</span><span>ض</span><span>م</span></div><span>یک مسیر، ده درس، بی‌نهایت کشف</span></div>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+              <div class="planet-ring ring-a"></div><div class="planet-ring ring-b"></div>
+              <div class="planet"><div class="planet-crater crater-a"></div><div class="planet-crater crater-b"></div><div class="planet-crater crater-c"></div><div class="planet-band"></div></div>
+              <div class="floating-book">بِسْمِ اللّٰهِ</div><div class="floating-star star-a">✦</div><div class="floating-star star-b">✧</div><div class="floating-star star-c">✦</div>
+              <div class="orbit-label label-a"><span>01</span> واژه‌ها</div><div class="orbit-label label-b"><span>02</span> قواعد</div>
+            </div>
+            <div class="hero-bottom"><span>✦</span> نقشهٔ جهان آموزشی فعال است <span class="hero-bottom-line"></span><small>نسخهٔ جهان خیال‌انگیز ۲.۰</small></div>
+          </div>
+
+          <div class="section-heading"><div><span class="section-kicker">YOUR COMMAND CENTER</span><h2>وضعیت کاوش تو</h2><p>هر تمرین، یک قدم به جلوست.</p></div><button class="text-button" data-view="progress">گزارش کامل <span>←</span></button></div>
+          <div class="stats-grid">
+            <article class="stat-card stat-xp"><div class="stat-top"><span>امتیاز تجربه</span><span class="stat-icon">✦</span></div><strong id="statXp">۰</strong><small>XP جمع‌آوری‌شده</small><div class="stat-track"><i id="xpBar"></i></div></article>
+            <article class="stat-card"><div class="stat-top"><span>واژگان مسلط</span><span class="stat-icon icon-cyan">اب</span></div><strong id="statWords">۰</strong><small>از کل مدخل‌های فرهنگ واژگان</small><div class="mini-trend">+ <span id="statLearnedToday">۰</span> امروز</div></article>
+            <article class="stat-card"><div class="stat-top"><span>آزمون‌های انجام‌شده</span><span class="stat-icon icon-purple">▤</span></div><strong id="statTests">۰</strong><small>ثبت‌شده در این مرورگر</small><div class="mini-trend">میانگین <span id="statAverage">—</span></div></article>
+            <article class="stat-card"><div class="stat-top"><span>زنجیرهٔ مطالعه</span><span class="stat-icon icon-orange">♨</span></div><strong><span id="statStreak">۰</span> <small class="inline-small">روز</small></strong><small>پیوستگی یادگیری</small><div class="mini-trend">هر روز کمی بهتر</div></article>
+          </div>
+
+          <div class="home-columns">
+            <section class="panel map-panel">
+              <div class="panel-heading"><div><span class="section-kicker">EXPLORE THE WORLD</span><h3>نقشهٔ سرزمین‌های دانش</h3></div><span class="live-label"><i></i> آمادهٔ کاوش</span></div>
+              <div class="world-map">
+                <div class="map-stars">✦　·　✧　　·　✦　　·　✧　·</div>
+                <svg class="map-route" viewBox="0 0 700 280" preserveAspectRatio="none" aria-hidden="true"><path d="M45 205 C130 50 200 250 290 120 S450 30 510 170 S620 230 675 78"/><path class="route-dash" d="M45 205 C130 50 200 250 290 120 S450 30 510 170 S620 230 675 78"/></svg>
+                <button class="map-node node-vocab" data-view="dictionary"><span>اب</span><b>شهر واژگان</b><small>کلمه‌ها را شکار کن</small></button>
+                <button class="map-node node-rules" data-view="rules"><span>∑</span><b>قلعهٔ قواعد</b><small>راز ساختارها</small></button>
+                <button class="map-node node-translate" data-view="translation"><span>⇄</span><b>سرزمین ترجمه</b><small>معنا را کشف کن</small></button>
+                <button class="map-node node-exam" data-view="exams"><span>▤</span><b>تالار آزمون</b><small>توانایی‌ات را بسنج</small></button>
+                <button class="map-node node-game" data-view="games"><span>♢</span><b>میدان بازی</b><small>با دانش بازی کن</small></button>
+                <div class="map-compass">N<br><span>✥</span></div>
+              </div>
+              <div class="map-legend"><span><i class="legend-dot dot-active"></i> قلمروهای فعال</span><span><i class="legend-dot dot-new"></i> مسیرهای در انتظار محتوا</span></div>
+            </section>
+            <section class="panel mission-panel">
+              <div class="panel-heading"><div><span class="section-kicker">DAILY QUEST</span><h3>مأموریت امروز</h3></div><span class="quest-icon">⚑</span></div>
+              <div class="mission-banner"><div class="mission-symbol">✧</div><div><b>پنج واژه را مرور کن</b><p>حافظه‌ات را گرم کن و ۳۰ امتیاز بگیر.</p></div></div>
+              <div class="mission-progress-row"><span>پیشرفت مأموریت</span><b id="missionProgressText">۰ از ۵</b></div>
+              <div class="mission-track"><i id="missionBar"></i></div>
+              <button class="btn btn-primary btn-wide" id="dailyMissionBtn">شروع مأموریت <span>←</span></button>
+              <div class="mission-foot"><span>◷ حدود ۳ دقیقه</span><span>✦ +۳۰ XP</span></div>
+            </section>
+          </div>
+
+          <div class="section-heading section-heading-tight"><div><span class="section-kicker">YOUR NEXT STEP</span><h2>امروز چه چیزی یاد بگیرم؟</h2></div><span class="smart-tag">✦ پیشنهاد هوشمند</span></div>
+          <div class="recommendation" id="recommendationCard"><div class="rec-icon">▣</div><div class="rec-copy"><b>مرور هوشمند واژگان</b><p>واژه‌هایی که هنوز یاد نگرفته‌ای را مرور کن تا تسلطت بیشتر شود.</p></div><span class="rec-meta">۵ کارت · ۳ دقیقه</span><button class="btn btn-secondary" data-view="flashcards">شروع مرور <span>←</span></button></div>
+
+          <div class="section-heading section-heading-tight"><div><span class="section-kicker">THE LEARNING ROUTE</span><h2>ده ایستگاه تا تسلط</h2><p>عنوان‌ها و ترتیب درس‌ها مطابق فهرست کتاب رسمی است.</p></div><button class="text-button" data-view="lessons">همهٔ درس‌ها <span>←</span></button></div>
+          <div class="lesson-strip" id="homeLessons"></div>
+          <div class="source-note"><span>ⓘ</span><div><b>دربارهٔ محتوای این نسخه</b><p>تمام ۲۰۳ مدخل شمارش‌شدهٔ بخش «المعجم» در ده درس وارد شده‌اند. ۷۱ مدخل مرور و تکمیلی با برچسب جدا آمده‌اند. معنی پایه و شمارهٔ درس از واژه‌نامهٔ رسمی است؛ مثال‌ها و آوانویسی‌ها آموزشی و تألیفی‌اند. واژه‌های پراکنده در همهٔ متن‌ها و تمرین‌ها هنوز ممیزی مستقل می‌خواهند.</p></div></div>
+        </section>
+
+        <!-- LESSONS -->
+        <section class="view" id="view-lessons">
+          <div class="page-intro"><span class="section-kicker">THE LEARNING ROUTE</span><h1>نقشهٔ ده درس</h1><p>هر ایستگاه یک موضوع تازه و یک فرصت برای تمرین است. برای ورود، روی هر درس بزن.</p></div>
+          <div class="lesson-grid" id="allLessons"></div>
+        </section>
+
+        <!-- LESSON DETAIL -->
+        <section class="view" id="view-lesson-detail">
+          <button class="back-link" data-view="lessons">← بازگشت به نقشهٔ درس‌ها</button>
+          <div id="lessonDetail"></div>
+        </section>
+
+        <!-- DICTIONARY -->
+        <section class="view" id="view-dictionary">
+          <div class="page-intro split-intro"><div><span class="section-kicker">THE WORD CITY</span><h1>شهر واژگان</h1><p>واژه را پیدا کن، معنی را حدس بزن، و آن را به حافظه‌ات بسپار.</p></div><button class="btn btn-primary" id="startFlashcardsTop">▣ شروع فلش‌کارت</button></div>
+          <div class="dictionary-toolbar"><label class="search-field"><span>⌕</span><input id="dictionarySearch" type="search" placeholder="جست‌وجوی فارسی یا عربی..."></label><select id="lessonFilter"><option value="all">همهٔ درس‌ها</option></select><select id="typeFilter"><option value="all">همهٔ انواع</option></select><select id="sourceFilter"><option value="all">همهٔ منابع</option><option value="official">المعجم رسمی</option><option value="review">مرور هفتم و هشتم</option><option value="supplemental">آموزش تکمیلی</option></select><select id="masteryFilter"><option value="all">همهٔ وضعیت‌ها</option><option value="new">یادنگرفته</option><option value="learned">یادگرفته</option><option value="difficult">نیازمند مرور</option><option value="favorite">علاقه‌مندی</option></select></div>
+          <div class="dictionary-summary"><span id="dictionaryCount">۰ واژه</span><div class="dictionary-pills"><button class="filter-pill active" data-quick-filter="all">همه</button><button class="filter-pill" data-quick-filter="difficult">سخت‌ها</button><button class="filter-pill" data-quick-filter="favorite">علاقه‌مندی‌ها</button><button class="filter-pill" data-quick-filter="learned">یادگرفته‌ها</button></div><button class="text-button" id="shuffleWords">↻ تصادفی</button></div>
+          <div class="word-grid" id="wordGrid"></div>
+          <div class="empty-state hidden" id="emptyWords"><div>⌕</div><b>واژه‌ای پیدا نشد</b><p>عبارت دیگری جست‌وجو کن یا فیلترها را تغییر بده.</p></div>
+          <div class="source-note"><span>ⓘ</span><div><b>دامنه و منبع واژه‌نامه</b><p>تمام ۲۰۳ مدخلِ بخش «المعجم» مطابق شمار اعلام‌شدهٔ هر درس در کتاب وارد شده‌اند. فیلتر منبع، مدخل‌های رسمی را از مرور پایه‌های هفتم و هشتم و آموزش تکمیلی جدا می‌کند. مترادف‌ها، متضادها، مثال‌ها و آوانویسی تقریبی، لایهٔ آموزشی افزوده‌اند و به‌عنوان متن رسمی کتاب معرفی نمی‌شوند.</p></div></div>
+        </section>
+
+        <!-- RULES -->
+        <section class="view" id="view-rules">
+          <div class="page-intro"><span class="section-kicker">THE GRAMMAR CITADEL</span><h1>قلعهٔ قواعد</h1><p>قواعد اصلی کتاب را با مثال‌های تازه و مرحله‌به‌مرحله یاد بگیر.</p></div>
+          <div class="rules-banner"><div class="rules-banner-icon">∑</div><div><b>قانون طلایی عربی نهم</b><p>هدف اصلی، تشخیص و ترجمهٔ ساختارها در جمله است؛ نه حفظ‌کردن طوطی‌وار جدول‌های صرف.</p></div></div>
+          <div class="rule-grid" id="ruleGrid"></div>
+          <div class="source-note"><span>ⓘ</span><div><b>تطبیق با راهنمای کتاب</b><p>۱۱ درس‌نامهٔ موضوعی، قواعد معرفی‌شده در راهنمای کتاب و مرورهای لازم را پوشش می‌دهند. توضیح‌ها و مثال‌ها تألیفی‌اند. آموزش گستردهٔ باب‌های ثلاثی مزید در اهداف این پایه نیست.</p></div></div>
+        </section>
+
+        <!-- TRANSLATION -->
+        <section class="view" id="view-translation">
+          <div class="page-intro"><span class="section-kicker">THE TRANSLATION LANDS</span><h1>سرزمین ترجمه</h1><p>به‌جای دیدن پاسخ، اول خودت جمله را تحلیل کن و بعد معنی را آشکار کن.</p></div>
+          <div class="translation-layout"><div class="translation-card"><div class="translation-top"><span>کارگاه جمله‌خوانی</span><span class="sample-label">مثال آموزشی تازه</span></div><div class="arabic-line" id="translationArabic">يَذْهَبُ الطّالِبُ إِلَى الْمَكْتَبَةِ.</div><div class="translation-hint" id="translationHint">راهنما: فعل را پیدا کن؛ سپس ببین چه کسی کار را انجام می‌دهد.</div><div class="translation-answer hidden" id="translationAnswer">دانش‌آموز به کتابخانه می‌رود.</div><div class="translation-actions"><button class="btn btn-secondary" id="showTranslation">نمایش ترجمه</button><button class="btn btn-ghost" id="nextTranslation">جملهٔ بعدی ↻</button></div></div><div class="translation-side"><div class="side-mini-card"><span class="mini-card-icon">١</span><b>اول فعل</b><p>زمان و معنی فعل، مسیر ترجمه را روشن می‌کند.</p></div><div class="side-mini-card"><span class="mini-card-icon">٢</span><b>بعد ترکیب‌ها</b><p>ترکیب وصفی و اضافی را در جمله بررسی کن.</p></div><div class="side-mini-card"><span class="mini-card-icon">٣</span><b>در پایان معنا</b><p>ترجمه باید روان و متناسب با فارسی باشد.</p></div></div></div>
+          <div class="section-heading section-heading-tight"><div><span class="section-kicker">TRANSLATION CHALLENGE</span><h2>تمرین کوتاه ترجمه</h2></div></div>
+          <div class="challenge-card"><div class="challenge-question"><span>ترجمهٔ مناسب را انتخاب کن:</span><strong>كانَ الطّالِبُ يَقْرَأُ كِتاباً.</strong><small>مثال آموزشی تازه · ماضی استمراری</small></div><div class="choice-list" id="translationChoices"><button data-correct="false">دانش‌آموز کتابی خواهد خواند.</button><button data-correct="true">دانش‌آموز مشغول خواندن کتابی بود.</button><button data-correct="false">دانش‌آموز کتابی خواند.</button></div><div class="feedback hidden" id="translationFeedback"></div></div>
+        </section>
+
+        <!-- EXAMS -->
+        <section class="view" id="view-exams">
+          <div class="page-intro"><span class="section-kicker">THE EXAM HALL</span><h1>تالار آزمون</h1><p>آمادگی‌ات را بسنج؛ بعد از هر آزمون، پاسخ‌ها و نکته‌ها را مرور کن.</p></div>
+          <div class="exam-config"><div class="exam-config-copy"><span class="section-kicker">BUILD YOUR CHALLENGE</span><h2>آزمون اختصاصی بساز</h2><p>موضوع و درجهٔ سختی را انتخاب کن. پرسش‌ها از محتوای آموزشی فعال سایت ساخته می‌شوند.</p></div><div class="exam-controls"><label>موضوع آزمون<select id="examTopic"><option value="mixed">ترکیبی</option><option value="vocab">واژگان</option><option value="verbs">افعال</option><option value="grammar">قواعد</option><option value="translation">ترجمه</option></select></label><label>سطح<select id="examLevel"><option value="easy">آسان</option><option value="medium" selected>متوسط</option><option value="hard">دشوار</option></select></label><label>تعداد سؤال<select id="examCount"><option>5</option><option selected>8</option><option>10</option></select></label><button class="btn btn-primary" id="startExam">ساخت آزمون ←</button></div></div>
+          <div class="exam-types"><article class="exam-type"><span class="exam-type-icon">اب</span><b>آزمون واژگان</b><p>معنی، مترادف و کاربرد واژه‌ها</p><button data-exam="vocab">انتخاب آزمون ←</button></article><article class="exam-type"><span class="exam-type-icon purple">∑</span><b>آزمون قواعد</b><p>تشخیص ساختارها در جمله</p><button data-exam="grammar">انتخاب آزمون ←</button></article><article class="exam-type"><span class="exam-type-icon orange">⇄</span><b>آزمون ترجمه</b><p>فهم جمله و انتخاب معنی درست</p><button data-exam="translation">انتخاب آزمون ←</button></article><article class="exam-type"><span class="exam-type-icon green">◈</span><b>شبیه‌ساز ترکیبی</b><p>پرسش‌های چندموضوعی</p><button data-exam="mixed">انتخاب آزمون ←</button></article></div>
+          <div class="quiz-stage hidden" id="quizStage"></div>
+          <div class="exam-history panel"><div class="panel-heading"><div><span class="section-kicker">YOUR HISTORY</span><h3>آخرین تلاش‌ها</h3></div><span class="history-count" id="historyCount">۰ آزمون</span></div><div id="examHistory" class="history-list"><p class="muted">هنوز آزمونی ثبت نشده است.</p></div></div>
+        </section>
+
+        <!-- GAMES -->
+        <section class="view" id="view-games">
+          <div class="page-intro"><span class="section-kicker">THE LANGUAGE LAB</span><h1>آزمایشگاه بازی</h1><p>یادگیری را به چالش تبدیل کن؛ امتیاز بگیر و رکوردت را بهتر کن.</p></div>
+          <div class="game-grid">
+            <article class="game-card game-word"><div class="game-illustration word-illustration"><span>ع</span><i>✦</i><b>؟</b></div><div class="game-card-body"><div class="game-tag">سرعت و دقت</div><h3>شکارچی واژگان</h3><p>معنی درست واژهٔ عربی را قبل از تمام شدن زمان پیدا کن.</p><div class="game-meta"><span>⏱ ۶۰ ثانیه</span><span>✦ امتیاز XP</span></div><button class="btn btn-primary btn-wide" id="playWordHunt">ورود به بازی ←</button></div></article>
+            <article class="game-card game-memory"><div class="game-illustration memory-illustration"><span>اب</span><span>مَعْنى؟</span><span>✧</span></div><div class="game-card-body"><div class="game-tag purple-tag">حافظه و تمرکز</div><h3>حافظهٔ عربی</h3><p>کارت‌های عربی و معنی فارسی را به‌درستی با هم جفت کن.</p><div class="game-meta"><span>◈ ۶ جفت کارت</span><span>✦ رکوردشکن</span></div><button class="btn btn-secondary btn-wide" id="playMemory">شروع بازی ←</button></div></article>
+            <article class="game-card game-sentence"><div class="game-illustration sentence-illustration"><span>فعل</span><span>فاعل</span><span>مفعول</span></div><div class="game-card-body"><div class="game-tag orange-tag">تحلیل جمله</div><h3>کارآگاه جمله</h3><p>در هر دور، نقش دستوری یا ساختار درست را تشخیص بده.</p><div class="game-meta"><span>▤ ۵ مرحله</span><span>✦ تمرین قواعد</span></div><button class="btn btn-secondary btn-wide" id="playDetective">شروع چالش ←</button></div></article>
+          </div>
+          <div class="game-stage hidden" id="gameStage"></div>
+        </section>
+
+        <!-- FLASHCARDS -->
+        <section class="view" id="view-flashcards">
+          <div class="page-intro"><span class="section-kicker">SMART REVIEW</span><h1>فلش‌کارت‌های هوشمند</h1><p>اول معنی را به یاد بیاور؛ سپس کارت را برگردان و میزان تسلطت را ثبت کن.</p></div>
+          <div class="flashcard-layout"><div class="flashcard-main"><div class="flashcard-progress"><span id="flashcardCounter">کارت ۱ از ۵</span><span id="flashcardProgressLabel">۰٪ مرور شده</span></div><div class="flash-track"><i id="flashcardProgressBar"></i></div><div class="flashcard" id="flashcard"><div class="flashcard-glow"></div><span class="flashcard-category" id="flashcardCategory">درس دوم · فعل</span><div class="flashcard-word" id="flashcardWord">فَجْأَةً</div><div class="flashcard-pron" id="flashcardPron">/fajʾatan/</div><div class="flashcard-meaning hidden" id="flashcardMeaning">ناگهان</div><button class="reveal-button" id="revealFlashcard">برای دیدن معنی کلیک کن <span>↻</span></button><div class="flashcard-watermark">ARABILAND</div></div><div class="flashcard-actions"><button class="btn btn-ghost" id="flashcardSkip">بعداً مرور می‌کنم</button><div><button class="btn btn-soft" id="flashcardAgain">× نیاز به تمرین</button><button class="btn btn-primary" id="flashcardKnown">✓ بلدم</button></div></div></div><aside class="flashcard-aside"><div class="panel"><span class="section-kicker">YOUR REVIEW</span><h3>وضعیت مرور</h3><div class="review-stat"><b id="reviewKnown">۰</b><span>مسلط</span></div><div class="review-stat"><b id="reviewAgain">۰</b><span>نیازمند تکرار</span></div><div class="review-stat"><b id="reviewRemain">۰</b><span>باقی‌مانده</span></div><div class="review-note">کارت‌هایی که سخت‌تر هستند در مرورهای بعدی زودتر به تو نشان داده می‌شوند.</div></div><button class="btn btn-secondary btn-wide" id="restartFlashcards">↻ شروع دوبارهٔ مرور</button></aside></div>
+        </section>
+
+        <!-- PROGRESS -->
+        <section class="view" id="view-progress">
+          <div class="page-intro"><span class="section-kicker">EXPLORER PROFILE</span><h1>کارنامهٔ کاوشگر</h1><p>پیشرفت تو در این مرورگر ذخیره می‌شود؛ مسیرت را قدم‌به‌قدم ببین.</p></div>
+          <div class="progress-hero"><div class="progress-avatar">✦</div><div><span class="section-kicker">CURRENT RANK</span><h2 id="progressName">کاوشگر</h2><p id="progressRank">تازه‌وارد · سطح ۱</p></div><div class="progress-xp"><b id="progressXp">۰ XP</b><small id="nextLevelText">برای سطح بعدی ۱۰۰ XP دیگر لازم داری.</small></div></div>
+          <div class="progress-grid"><div class="panel progress-chart-panel"><div class="panel-heading"><div><span class="section-kicker">MASTERY</span><h3>نقشهٔ تسلط تو</h3></div></div><div class="mastery-row"><div><span>واژگان</span><b id="masteryWordsText">۰٪</b></div><div class="mastery-track"><i id="masteryWords"></i></div></div><div class="mastery-row"><div><span>قواعد</span><b id="masteryRulesText">۰٪</b></div><div class="mastery-track"><i id="masteryRules"></i></div></div><div class="mastery-row"><div><span>آزمون‌ها</span><b id="masteryExamText">۰٪</b></div><div class="mastery-track"><i id="masteryExam"></i></div></div><div class="progress-footnote">درصدها بر اساس فعالیت‌های انجام‌شده در نسخهٔ فعلی محاسبه می‌شوند.</div></div><div class="panel badges-panel"><div class="panel-heading"><div><span class="section-kicker">ACHIEVEMENTS</span><h3>نشان‌های افتخار</h3></div><span class="history-count" id="badgeCount">۰ از ۶</span></div><div class="badge-grid" id="badgeGrid"></div></div></div>
+          <div class="panel recent-panel"><div class="panel-heading"><div><span class="section-kicker">RECENT ACTIVITY</span><h3>فعالیت‌های اخیر</h3></div></div><div id="activityList" class="activity-list"><p class="muted">هنوز فعالیتی ثبت نشده است.</p></div></div>
+        </section>
+
+        <!-- SETTINGS -->
+        <section class="view" id="view-settings">
+          <div class="page-intro"><span class="section-kicker">YOUR SPACE</span><h1>تنظیمات و حساب کاوشگر</h1><p>فضای یادگیری را مطابق سلیقه‌ات تنظیم کن.</p></div>
+          <div class="settings-grid"><div class="panel settings-panel"><h3>پروفایل</h3><label class="setting-field">نام نمایشی<input id="nameSetting" maxlength="24" placeholder="نام کاوشگر"></label><button class="btn btn-primary" id="saveName">ذخیرهٔ نام</button><div class="setting-divider"></div><h3>دفترچهٔ شخصی</h3><label class="setting-field">یادداشت‌های مرور<textarea id="notesSetting" rows="4" maxlength="3000" placeholder="نکته‌ها، سؤال‌ها یا واژه‌هایی که باید دوباره بخوانی..."></textarea></label><small class="note-saved" id="noteStatus">یادداشت‌ها فقط در همین مرورگر ذخیره می‌شوند.</small><div class="setting-divider"></div><h3>ظاهر سایت</h3><label class="setting-toggle"><span><b>تم تاریک</b><small>رنگ محیط را تغییر بده.</small></span><input type="checkbox" id="darkSetting"></label><label class="setting-field">اندازهٔ نوشته <span id="fontSizeValue">۱۰۰٪</span><input type="range" id="fontSetting" min="90" max="120" step="5" value="100"></label><div class="setting-divider"></div><h3>داده‌ها و پشتیبان‌گیری</h3><p class="muted">برای انتقال پیشرفت به دستگاه دیگر، از داده‌ها خروجی بگیر و روی دستگاه جدید بازیابی کن.</p><div class="setting-buttons"><button class="btn btn-secondary" id="exportData">↓ دریافت نسخهٔ پشتیبان</button><button class="btn btn-ghost" id="importData">↑ بازیابی نسخهٔ پشتیبان</button><input type="file" id="importFile" accept="application/json" hidden></div><button class="danger-button" id="resetData">بازنشانی کامل پیشرفت</button></div><div class="panel settings-info"><div class="settings-orb">☼</div><h3>یادگیری در هر زمان</h3><p>با نصب عربی‌لند روی صفحهٔ اصلی گوشی، می‌توانی تجربه‌ای شبیه اپلیکیشن داشته باشی. برای نصب آفلاین، یک‌بار سایت را در حالت آنلاین باز کن.</p><button class="btn btn-secondary btn-wide" id="installInfo">راهنمای نصب روی گوشی</button><div class="offline-status"><i></i><span id="offlineStatus">آماده برای استفادهٔ آفلاین پس از بارگذاری اولیه</span></div></div></div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="view" id="view-about">
+          <div class="page-intro"><span class="section-kicker">ABOUT THIS WORLD</span><h1>دربارهٔ عربی‌لند</h1><p>یک آزمایشگاه یادگیری برای تبدیل تمرین عربی به تجربه‌ای فعال و قابل پیگیری.</p></div>
+          <div class="about-layout"><div class="about-art"><div class="about-planet">ع</div><span>ARABILAND</span></div><div class="about-copy"><h2>یادگیری، یک ماجراجویی است.</h2><p>عربی‌لند یک وب‌اپلیکیشن آموزشی استاتیک برای تمرین عربی پایهٔ نهم است. این نسخه با HTML، CSS و JavaScript ساخته شده و برای اجرا به سرور اختصاصی یا اشتراک پولی نیاز ندارد.</p><p>ساختار ده درس و ۲۰۳ مدخل «المعجم» از کتاب عربی نهم چاپ دوازدهم ۱۴۰۵ استخراج و وارد شده‌اند. ۷۱ واژهٔ مرور و تکمیلی جدا برچسب خورده‌اند. یازده درس‌نامهٔ قواعد با دامنهٔ آموزشی راهنمای کتاب تنظیم شده‌اند؛ متن کامل کتاب و تمام تمرین‌های رسمی بازنشر نشده‌اند.</p><div class="about-facts"><span><b>۱۰</b> درس در نقشه</span><span><b>۱۱</b> درس‌نامهٔ قواعد</span><span><b>۰</b> وابستگی به سرور</span></div></div></div>
+          <div class="source-note"><span>ⓘ</span><div><b>منبع اصلی ساختار</b><p>کتاب «عربی، زبان قرآن»، پایهٔ نهم، دورهٔ اول متوسطه، چاپ دوازدهم ۱۴۰۵، سازمان پژوهش و برنامه‌ریزی آموزشی. برای تکمیل همهٔ واژگان و بررسی صفحه‌به‌صفحهٔ متن‌ها، باید مرحلهٔ ورود داده و بازبینی آموزشی جداگانه انجام شود.</p></div></div>
+        </section>
+      </div>
+      <footer class="main-footer"><span>ARABILAND <b>✦</b></span><span>یک تجربهٔ آموزشی مستقل · نسخهٔ ۲.۰ · بازطراحی فانتزی</span><button data-view="about">دربارهٔ این پروژه</button></footer>
+    </main>
+  </div>
+
+  <div class="modal-backdrop hidden" id="modalBackdrop"><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="بستن">×</button><div class="modal-icon">✦</div><h2 id="modalTitle">پیام</h2><div id="modalBody"></div><div class="modal-actions" id="modalActions"><button class="btn btn-primary" id="modalOk">متوجه شدم</button></div></div></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script>if ('serviceWorker' in navigator && location.protocol.startsWith('http')) { window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {})); }</script>
+</body>
+</html>
